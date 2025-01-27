@@ -110,12 +110,12 @@ section {
     color: rgb(240, 175, 12);
 }
 
-.skill, .certification {
+.skill, .certification, .tech {
     color: inherit;
     transition: color 0.3s ease;
 }
 
-.skill:hover, .certification:hover {
+.skill:hover, .certification:hover, .tech:hover {
     color: rgb(240, 175, 12); /* Yellow color */
 }
 
@@ -155,9 +155,24 @@ section {
     color: rgb(240, 175, 12);
 }
 
+.project h3 {
+    font-size: 1.3em;
+    font-weight: 500;
+    color: rgb(240, 175, 12);
+    margin-bottom: 6px;
+}
+
 .project p {
     font-size: 1em;
     line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.technologies {
+    font-size: 0.8em;
+    color: #c0c0c0;
+    margin-top: -12px;
+    margin-bottom: 10px;
 }
 
 .contact-cards {
@@ -209,7 +224,7 @@ section {
     align-items: baseline;
 }
 
-.icon-30 { font-size: 30px; }
+.icon-30 { font-size: 24px; }
 
 .no-link {
     text-decoration: none;
