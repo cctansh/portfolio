@@ -11,7 +11,7 @@ body {
     color: #f4f4f9;
 }
 
-p, h1 {
+p, h1, h2 {
     cursor: default;
 }
 
@@ -106,7 +106,7 @@ section {
     text-align: center;
 }
 
-.about h1, .contact h1 {
+.about h1, .contact h1, .projects h1 {
     color: rgb(240, 175, 12);
 }
 
@@ -119,38 +119,44 @@ section {
     color: rgb(240, 175, 12); /* Yellow color */
 }
 
-.projects ul {
-    list-style: none;
-    padding-left: 0;
-    text-align: center;
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.projects ul li {
-    margin-bottom: 10px;
+.projects nav {
+    margin-top: 16px;
 }
-
-.projects ul li a {
-    color: #007BFF;
-    text-decoration: none;
-    font-size: 1.2em;
+.projects-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.projects-nav ul li a {
+    font-weight: 400;
 }
 
 .project {
-    margin: 50px 0;
+    background-color: #444;
+    color: #f4f4f9;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 12px;
     padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    text-align: left;
+    margin-top: 42px;
 }
 
 .project h2 {
-    font-size: 2em;
+    font-size: 1.7em;
     margin-bottom: 15px;
+    font-weight: 500;
+    color: rgb(240, 175, 12);
 }
 
 .project p {
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 1.6;
 }
 
@@ -199,6 +205,18 @@ section {
 .flex-row {
     display: flex;
     flex-direction: row;
-    gap:8px;
+    gap:12px;
     align-items: baseline;
+}
+
+.icon-30 { font-size: 30px; }
+
+.no-link {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.no-link:hover {
+    color: #c6c6c6;
 }
